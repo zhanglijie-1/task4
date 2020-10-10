@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逐帧动画</title>
+	<style>
+			@keyframes walk{
+			0%{background-position: 0 0;}
+			100%{background-position: -800px 0;}
+		}
+		.c{
+			height: 100px;
+			width: 100px;
+			background: url('imgs/loading.png')left no-repeat;
+			animation: walk .5s steps(8) infinite;
+		}
+			 	@keyframes dh{
+			0%{background-position: 0 0;}
+			100%{background-position: -1080px 0;}
+		}
+		.a{
+			height: 293px;
+			width: 180px;
+			background: url('imgs/walk.jpg')left no-repeat;
+			animation: dh .5s steps(6) infinite;  
+		}
+		@keyframes dh3{
+			0%{background-position: 0 0;}
+			100%{background-position:-438px 0;}
+		}
+		.b{
+			width: 73px;
+			height: 119px;
+			background: url('imgs/hua.jpg')left no-repeat ;
+        animation: dh3 3s steps(6) infinite;
+		}
+		@keyframes dh1{
+			0%{background-position: 0 0;}
+			100%{background-position:-1327px 0;}
+		}
+ 		.e{
+ 			width: 132px;
+ 			height: 156px;
+ 			background: url('imgs/run2.png')left no-repeat;
+ 			animation: dh1 3s steps(10) infinite	
+ 		}
+ 				@keyframes dh5{
+			0%{background-position: 0 0;}
+			100%{background-position:0 -2045px;}
+		}
+		.f{
+			font-size: 42px;
+			width: 681px;
+			height: 663px;
+			background: url('imgs/jd.png')left no-repeat ;
+        animation: dh5 5s steps(3) infinite;
+		}
+		@keyframes dh2{
+			0%{background-position: 0 0;}
+			100%{background-position: -1680px 0;}
+		}
+		.d{
+			height: 140px;
+			width: 140px;
+			background: url('imgs/run.png')right no-repeat;
+	   animation: dh2 .1s steps(12) infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="c"></div>
+	<hr>
+	<div class="a"></div>
+	<hr>
+	<div class="b"></div>
+	<hr>
+	<div class="e"></div>
+	<hr>
+	<div class="d"></div>
+	<hr>
+	<div class="f"></div>
+</body>
+</html>

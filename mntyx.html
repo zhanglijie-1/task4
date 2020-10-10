@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>太阳、地球、月亮旋转</title>
+<style>
+.hz{
+	transform: scale(0.5);
+	position: relative;
+	padding: 1px;
+	height: 300px;
+	width: 300px;
+	margin:100px auto;
+}	
+.gz{
+	position:relative;
+	height: 400px;
+	width: 400px;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin: 50px 0 0 50px;
+	display: flex;
+	animation: rotate 10s infinite linear;
+}
+.ty{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-color: red;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px red,-5px -5px 10px red,5px -5px 10px red,-5px 5px 10px red;
+}
+.zz{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin: -100px -100px 0 0;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: flex;
+	animation: rotate 2s infinite linear;
+}
+.dq{
+	margin: auto;
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	border-radius: 50%;
+}
+.yl{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	height: 20px;
+	width: 20px;
+	margin: -10px 0 0 -10px;
+	background-color: blue;
+	border-radius: 50%;
+}
+@keyframes rotate{
+	100%{transform:rotate(360deg);}
+}
+</style>
+</head>
+<body>
+<div class="hz">
+	<div class="gz">
+		<div class="ty"></div>
+		<div class="zz">
+			<div class="dq"></div>
+			<div class="yl"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
